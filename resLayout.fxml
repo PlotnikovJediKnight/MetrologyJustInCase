@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="342.0" text="Метрика Холстеда" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="256.0" prefWidth="342.0">
+         <children>
+            <VBox prefHeight="379.0" prefWidth="183.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Словарь операторов">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Словарь операндов">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="182.0" text="  Число операторов">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Число операндов">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Словарь программы">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Длина программы">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="181.0" text="  Объём программы">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="530.0" prefWidth="161.0">
+               <children>
+                  <Label fx:id="lbDictOperator" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbDictOperand" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbCountOperator" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbCountOperand" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbDictProgram" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbProgramLength" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lbProgramVolume" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="null">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextArea fx:id="txarPairs" editable="false" prefHeight="200.0" prefWidth="200.0">
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </TextArea>
+      <Button fx:id="btnExit" mnemonicParsing="false" text="ОК">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
